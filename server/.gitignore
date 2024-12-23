@@ -1,0 +1,13 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore npm and yarn lock files in some cases (optional, for example, if using only yarn)
+# package-lock.json
+# yarn.lock
