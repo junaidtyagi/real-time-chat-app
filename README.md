@@ -12,10 +12,10 @@ B) Technologies Used
 2. Express: A lightweight Node.js web framework used to build the backend API.
 3. React: A front-end JavaScript library for building the user interface.
 4. Node.js: A JavaScript runtime for building the server-side application.
-5 .Socket.io: A library for real-time, bidirectional communication between the server and clients.
+5. Socket.io: A library for real-time, bidirectional communication between the server and clients.
    
 C) Usage
-Sign up: Register an account to start chatting.
-Login: After registration, log in using your credentials.
-Create A ChatBox: Create ChatBox to start chatting with other user.
-Send Messages: Type messages and see them appear in real-time for all users in the room.
+1. Sign up: Register an account to start chatting.
+2. Login: After registration, log in using your credentials.
+3. Create A ChatBox: Create ChatBox to start chatting with other user.
+4. Send Messages: Type messages and see them appear in real-time for all users in the room.
