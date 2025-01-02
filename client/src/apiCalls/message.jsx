@@ -1,7 +1,8 @@
-import { axiosInstanse } from "./index";
+import { axiosInstanse ,url} from "./index";
+
 export const  createNewMessage = async(message)=>{
     try {
-        const response = await axiosInstanse.post('http://localhost:3000/api/message/new-message' , message);
+        const response = await axiosInstanse.post( url + '/api/message/new-message' , message);
         return response.data;
     } catch (error) {
         console.log(error)
@@ -9,7 +10,7 @@ export const  createNewMessage = async(message)=>{
 }
 export const  getAllMessages = async(chatId)=>{
     try {
-        const response = await axiosInstanse.get(`http://localhost:3000/api/message/${chatId}`);
+        const response = await axiosInstanse.get( url + `/api/message/${chatId}`);
         return response.data;
     } catch (error) {
         console.log(error)
