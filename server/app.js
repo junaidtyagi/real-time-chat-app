@@ -9,7 +9,7 @@ const messageRoutes = require('./routes/messageRoutes');
 
 // Global CORS middleware (for REST API routes)
 app.use(cors({
-  origin: "http://localhost:5173",  // Restrict to your frontend during development
+  origin: "https://real-time-chat-app-client-yfml.onrender.com",  // Restrict to your frontend during development
   methods: ['GET', 'POST'],
   credentials: true  // Allow cookies if needed
 }));
@@ -23,7 +23,7 @@ const server = require('http').createServer(app);
 // Socket.IO server with specific CORS settings
 const io = require('socket.io')(server, {
   cors: {
-    origin: "http://localhost:5173",  // Adjust based on your frontend's URL
+    origin: "https://real-time-chat-app-client-yfml.onrender.com",  // Adjust based on your frontend's URL
     methods: ['GET', 'POST'],
     credentials: true  // Allow cookies if needed
   }
