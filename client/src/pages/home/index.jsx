@@ -4,7 +4,7 @@ import Sidebar from "./components/sidebar";
 import ChatArea from "./components/chatArea";
 import { useSelector } from "react-redux";
 import { io }from "socket.io-client";
-const socket = io('http://localhost:3000');
+const socket = io('https://real-time-chat-app-server-g69x.onrender.com');
 function Home() {
    const { selectedChat , user} = useSelector(state => state.userReducer);
    const [ onlineUser , setOnlineUser]=useState([])
